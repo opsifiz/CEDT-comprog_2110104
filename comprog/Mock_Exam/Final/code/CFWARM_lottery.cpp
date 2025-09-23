@@ -21,7 +21,8 @@ int32_t main(){
             }
         }else if(c == 'P'){
             cin>>s;
-            cout<<cnt[s]<<'\n';
+            if(cnt.find(s) == cnt.end()) cout<<"0\n";
+            else cout<<cnt[s]<<'\n';
         }else if(c == 'H'){
             cout<<best<<'\n';
         }else if(c == 'N'){
